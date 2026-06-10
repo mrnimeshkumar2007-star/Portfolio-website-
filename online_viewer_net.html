@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nimesh Kumar - Computer Science Engineering Student, Full Stack Developer, Python Programmer, and Aspiring Software Engineer Portfolio.">
+    <meta name="keywords" content="Nimesh Kumar, Software Engineer, Portfolio, Python Developer, Full Stack Developer, Computer Science Student">
+    <meta name="author" content="Nimesh Kumar">
+    <title>Nimesh Kumar | Software Engineer Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8B5CF6',
+                        secondary: '#14B8A6'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: Inter, system-ui, sans-serif;
+        }
+
+        .typing::after {
+            content: "|";
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all .8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .skill-fill {
+            transition: width 1.5s ease;
+        }
+
+        .glass {
+            backdrop-filter: blur(12px);
+            background: rgba(255,255,255,0.06);
+        }
+
+        .nav-active {
+            color: #8B5CF6;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800 dark:bg-gray-950 dark:text-gray-100 transition duration-300">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-white/80 dark:bg-gray-950/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="font-bold text-xl">NK.</h1>
+
+            <div class="hidden md:flex gap-8">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <button id="themeToggle" class="p-2 rounded-lg border border-gray-300 dark:border-gray-700">
+                🌙
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="min-h-screen flex items-center justify-center px-6">
+        <div class="text-center max-w-4xl">
+            <p class="text-secondary font-semibold mb-3">Hello, I'm</p>
+
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4">
+                Nimesh Kumar
+            </h1>
+
+            <h2 id="typingText" class="typing text-xl md:text-3xl text-primary font-semibold mb-6"></h2>
+
+            <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-8">
+                Computer Science Engineering student with strong foundations in
+                Python, C++, SQL, and web development. Passionate about building
+                impactful software solutions and continuously learning modern technologies.
+            </p>
+
+            <div class="flex justify-center gap-4 flex-wrap">
+                <a href="mailto:mr.nimeshkumar2007@gmail.com"
+                    class="px-6 py-3 rounded-xl bg-primary text-white hover:scale-105 transition">
+                    Email Me
+                </a>
+
+                <a href="https://linkedin.com/in/nimesh-kumar-094988328" target="_blank"
+                    class="px-6 py-3 rounded-xl border border-primary text-primary">
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-24 px-6 reveal">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold mb-10 text-center">About Me</h2>
+
+            <div class="glass rounded-3xl p-8 border border-gray-200 dark:border-gray-800">
+                <p class="text-lg leading-relaxed">
+                    I am a B.Tech Computer Science Engineering student at Maharana Pratap Engineering College,
+                    Kanpur, maintaining a CGPA of 8.6/10. My interests include software development,
+                    database systems, and creating practical web applications.
+                </p>
+
+                <p class="mt-5 text-lg leading-relaxed">
+                    Through academic projects and leadership activities, I have developed strong
+                    problem-solving, teamwork, communication, and project coordination skills.
+                    I am actively seeking opportunities to grow as a Software Engineer.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-24 px-6 bg-gray-50 dark:bg-gray-900 reveal">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Skills</h2>
+
+            <div class="grid md:grid-cols-2 gap-10">
+
+                <div>
+                    <h3 class="font-semibold text-xl mb-6">Technical Skills</h3>
+
+                    <div class="space-y-5">
+
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Python</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="h-3 bg-gray-300 rounded-full">
+                                <div class="skill-fill h-3 bg-primary rounded-full" style="width:90%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>C++</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="h-3 bg-gray-300 rounded-full">
+                                <div class="skill-fill h-3 bg-secondary rounded-full" style="width:85%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>SQL</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="h-3 bg-gray-300 rounded-full">
+                                <div class="skill-fill h-3 bg-primary rounded-full" style="width:80%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>JavaScript</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="h-3 bg-gray-300 rounded-full">
+                                <div class="skill-fill h-3 bg-secondary rounded-full" style="width:75%"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-xl mb-6">Tech Stack</h3>
+
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 rounded-full bg-primary/10 text-primary">Python</span>
+                        <span class="px-4 py-2 rounded-full bg-secondary/10 text-secondary">C</span>
+                        <span class="px-4 py-2 rounded-full bg-primary/10 text-primary">C++</span>
+                        <span class="px-4 py-2 rounded-full bg-secondary/10 text-secondary">Java</span>
+                        <span class="px-4 py-2 rounded-full bg-primary/10 text-primary">JavaScript</span>
+                        <span class="px-4 py-2 rounded-full bg-secondary/10 text-secondary">HTML</span>
+                        <span class="px-4 py-2 rounded-full bg-primary/10 text-primary">SQL</span>
+                        <span class="px-4 py-2 rounded-full bg-secondary/10 text-secondary">Database Design</span>
+                        <span class="px-4 py-2 rounded-full bg-primary/10 text-primary">Leadership</span>
+                        <span class="px-4 py-2 rounded-full bg-secondary/10 text-secondary">Communication</span>
+                        <span class="px-4 py-2 rounded-full bg-primary/10 text-primary">Team Collaboration</span>
+                        <span class="px-4 py-2 rounded-full bg-secondary/10 text-secondary">Problem Solving</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-24 px-6 reveal">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Projects</h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="glass rounded-3xl p-6 border border-gray-200 dark:border-gray-800 hover:-translate-y-2 transition">
+                    <h3 class="font-bold text-xl mb-3">Expense Tracker Application</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">
+                        Full-stack finance application enabling expense tracking,
+                        category classification, and budgeting insights.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs px-3 py-1 bg-primary/10 rounded-full">Python</span>
+                        <span class="text-xs px-3 py-1 bg-secondary/10 rounded-full">JavaScript</span>
+                        <span class="text-xs px-3 py-1 bg-primary/10 rounded-full">HTML</span>
+                    </div>
+                </div>
+
+                <div class="glass rounded-3xl p-6 border border-gray-200 dark:border-gray-800">
+                    <h3 class="font-bold text-xl mb-3">Student Performance Tracker</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">
+                        Concept project for monitoring academic performance using
+                        database-driven reports and analytics.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs px-3 py-1 bg-primary/10 rounded-full">Python</span>
+                        <span class="text-xs px-3 py-1 bg-secondary/10 rounded-full">SQL</span>
+                    </div>
+                </div>
+
+                <div class="glass rounded-3xl p-6 border border-gray-200 dark:border-gray-800">
+                    <h3 class="font-bold text-xl mb-3">Portfolio Website</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">
+                        Responsive personal portfolio built using modern UI principles,
+                        animations, and clean design.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs px-3 py-1 bg-primary/10 rounded-full">HTML</span>
+                        <span class="text-xs px-3 py-1 bg-secondary/10 rounded-full">Tailwind</span>
+                        <span class="text-xs px-3 py-1 bg-primary/10 rounded-full">JavaScript</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements" class="py-24 px-6 bg-gray-50 dark:bg-gray-900 reveal">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Achievements & Certifications</h2>
+
+            <div class="space-y-6">
+
+                <div class="glass p-6 rounded-2xl border border-gray-200 dark:border-gray-800">
+                    <h3 class="font-semibold text-lg">🎓 B.Tech CSE — CGPA 8.6/10</h3>
+                    <p class="text-gray-600 dark:text-gray-400">
+                        Maharana Pratap Engineering College, Kanpur.
+                    </p>
+                </div>
+
+                <div class="glass p-6 rounded-2xl border border-gray-200 dark:border-gray-800">
+                    <h3 class="font-semibold text-lg">🐍 Python Essentials Certificate</h3>
+                    <p class="text-gray-600 dark:text-gray-400">
+                        Certified proficiency in Python programming.
+                    </p>
+                </div>
+
+                <div class="glass p-6 rounded-2xl border border-gray-200 dark:border-gray-800">
+                    <h3 class="font-semibold text-lg">💻 C++ Programming Certificate</h3>
+                    <p class="text-gray-600 dark:text-gray-400">
+                        Demonstrated competency in object-oriented programming concepts.
+                    </p>
+                </div>
+
+                <div class="glass p-6 rounded-2xl border border-gray-200 dark:border-gray-800">
+                    <h3 class="font-semibold text-lg">🚀 Leadership & Communication</h3>
+                    <p class="text-gray-600 dark:text-gray-400">
+                        Organized peer study groups, presentations, and collaborative activities.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 px-6 reveal">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Contact</h2>
+
+            <div class="grid md:grid-cols-2 gap-10">
+
+                <form class="space-y-4">
+                    <input type="text" placeholder="Your Name"
+                        class="w-full p-4 rounded-xl bg-gray-100 dark:bg-gray-900 border border-gray-300 dark:border-gray-700">
+
+                    <input type="email" placeholder="Your Email"
+                        class="w-full p-4 rounded-xl bg-gray-100 dark:bg-gray-900 border border-gray-300 dark:border-gray-700">
+
+                    <textarea rows="5" placeholder="Message"
+                        class="w-full p-4 rounded-xl bg-gray-100 dark:bg-gray-900 border border-gray-300 dark:border-gray-700"></textarea>
+
+                    <button type="submit"
+                        class="w-full py-4 rounded-xl bg-primary text-white font-semibold">
+                        Send Message
+                    </button>
+                </form>
+
+                <div>
+                    <h3 class="font-semibold text-2xl mb-5">Let's Connect</h3>
+
+                    <div class="space-y-4">
+                        <p>📍 Kanpur, India</p>
+                        <p>📧 mr.nimeshkumar2007@gmail.com</p>
+                        <p>🔗 linkedin.com/in/nimesh-kumar-094988328</p>
+                        <p>📱 +91 79824 02332</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center border-t border-gray-200 dark:border-gray-800">
+        <p>© 2026 Nimesh Kumar. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const words = [
+            "Aspiring Software Engineer",
+            "Python Developer",
+            "Full Stack Learner",
+            "Problem Solver"
+        ];
+
+        let i = 0;
+        let j = 0;
+        let deleting = false;
+
+        function type() {
+            const text = document.getElementById("typingText");
+
+            if (!deleting) {
+                text.textContent = words[i].substring(0, j++);
+                if (j > words[i].length) {
+                    deleting = true;
+                    setTimeout(type, 1200);
+                    return;
+                }
+            } else {
+                text.textContent = words[i].substring(0, j--);
+                if (j === 0) {
+                    deleting = false;
+                    i = (i + 1) % words.length;
+                }
+            }
+
+            setTimeout(type, deleting ? 50 : 100);
+        }
+
+        type();
+
+        const themeBtn = document.getElementById("themeToggle");
+
+        themeBtn.addEventListener("click", () => {
+            document.documentElement.classList.toggle("dark");
+
+            themeBtn.textContent =
+                document.documentElement.classList.contains("dark") ? "☀️" : "🌙";
+        });
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("active");
+                }
+            });
+        });
+
+        document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        window.addEventListener("scroll", () => {
+            let current = "";
+
+            sections.forEach(section => {
+                const top = section.offsetTop - 120;
+                if (scrollY >= top) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove("nav-active");
+                if (link.getAttribute("href") === "#" + current) {
+                    link.classList.add("nav-active");
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
